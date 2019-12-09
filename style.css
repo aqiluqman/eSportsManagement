@@ -1,0 +1,118 @@
+@charset "utf-8";
+/* CSS Document */
+
+header img {
+		height: 80px;
+		margin-left: 40px;
+	}
+	
+	body {
+    height: 125vh;
+    background-image: url('wallpaper.jpg');
+    background-size: cover;
+    font-family: sans-serif;
+	margin-top: 70px;
+	padding: 30px;
+	}
+		
+	main {
+    color: white;
+	}
+	
+	header {
+    background-color:#DA2430;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 70px;
+	display: flex;
+	align-items: center;
+	box-shadow: 0 0 25px 0 black;
+	}
+	
+	header * {
+    display: inline;
+	}
+	
+	/*header li { to create space in between tabs
+		padding: 25px 20px;
+	}*/
+	
+	header li a {
+	padding: 25px 20px;
+    color: black;
+    text-decoration: none;
+	}
+	
+	header ul li a:hover {
+		background-color: #ddd;
+		font-weight:bold;
+		color: #DA2430;
+	}
+	header ul li a.active {
+	background-color:#ddd;
+	font-weight:bold;
+	color: #DA2430;
+	}
+
+.footer {
+    height:24px; 
+    width: 100%;
+    background-image: none;
+    background-repeat: repeat;
+    background-attachment: scroll;
+    background-position: 0% 0%;
+    position: fixed;
+    bottom: 0pt;
+    left: 0pt;
+	color: aliceblue
+}   
+
+.footer_contents {
+    height:24px;
+    width: 1000px; 
+    margin:auto;
+}
+
+.container {
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* The message box is shown when the user clicks on the password field */
+#message {
+  display:none;
+  background: black;
+  color: #000;
+  position: relative;
+  padding: 20px;
+  margin-top: 10px;
+}
+
+#message p {
+	padding: 10px 35px;
+	font-size: medium;
+}
+
+/* Add a green text color and a checkmark when the requirements are right */
+.valid {
+  color: green;
+}
+
+.valid:before {
+  position: relative;
+  left: -35px;
+  content: "\2714";
+}
+
+/* Add a red text color and an "x" when the requirements are wrong */
+.invalid {
+  color: red;
+}
+
+.invalid:before {
+  position: relative;
+  left: -35px;
+  content: "\2716";
+}
